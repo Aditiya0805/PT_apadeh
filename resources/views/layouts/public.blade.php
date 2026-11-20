@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="@yield('meta_description', 'PT_apadeh adalah distributor & penyedia material bangunan terlengkap berstandar SNI. Menyediakan semen, besi beton SNI, bata ringan, baja ringan, cat pelapis, dan keramik granit.')">
+    <meta name="description" content="@yield('meta_description', 'PT_apadeh adalah butik jam tangan mewah resmi dan kurator haute horlogerie terpercaya di Indonesia. Menyediakan Rolex, chronometer otomatis, diver profesional, dan dress watch 100% original bergaransi resmi.')">
     <meta name="theme-color" content="#071113">
-    <meta property="og:title" content="@yield('title', 'PT_apadeh — Pusat Material & Bahan Bangunan Terpercaya')">
-    <meta property="og:description" content="@yield('meta_description', 'Distributor material bangunan dan konstruksi terpercaya berstandar SNI. Pengiriman langsung ke proyek Anda.')">
+    <meta property="og:title" content="@yield('title', 'PT_apadeh — Boutique Jam Tangan Mewah & Haute Horlogerie')">
+    <meta property="og:description" content="@yield('meta_description', 'Butik kurasi jam tangan mewah original bergaransi internasional. Kunjungi private salon kami atau hubungi concierge.')">
     <meta property="og:type" content="website">
 
-    <title>@yield('title', 'PT_apadeh — Pusat Material & Bahan Bangunan')</title>
+    <title>@yield('title', 'PT_apadeh — Boutique Jam Tangan Mewah & Haute Horlogerie')</title>
 
     <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
     <link rel="icon" type="image/svg+xml" href="{{ asset('images/logo.svg') }}">
@@ -35,6 +35,12 @@
                             400: '#2DD4BF',
                             500: '#14B8A6',
                             600: '#0D9488',
+                        },
+                        gold: {
+                            300: '#FDE68A',
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
                         },
                         brand: {
                             50: '#FFF7ED',
@@ -62,7 +68,7 @@
                     },
                     boxShadow: {
                         glow: '0 0 35px -5px rgba(20, 184, 166, 0.25)',
-                        'glow-orange': '0 0 35px -5px rgba(249, 115, 22, 0.3)',
+                        'glow-gold': '0 0 35px -5px rgba(245, 158, 11, 0.25)',
                         card: '0 15px 35px -10px rgba(0, 0, 0, 0.5)',
                         '3d': '0 25px 50px -12px rgba(4, 11, 12, 0.7)',
                     },
@@ -134,7 +140,7 @@
         Lewati ke konten utama
     </a>
 
-    <!-- Top Navigation Bar (Yamaha/Luxury Automotive Industrial Concept) -->
+    <!-- Top Navigation Bar (Luxury Horology & Automotive Dark Theme) -->
     <header class="sticky top-0 z-50 border-b border-white/[0.08] bg-dark-900/90 backdrop-blur-xl">
         <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
             <!-- Brand Logo & Name -->
@@ -148,24 +154,24 @@
                     </svg>
                 </button>
 
-                <a href="{{ route('home') }}" class="group flex items-center gap-3" aria-label="PT_apadeh — Pusat Material Bangunan">
+                <a href="{{ route('home') }}" class="group flex items-center gap-3" aria-label="PT_apadeh — Boutique Jam Tangan Mewah">
                     <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-white p-1 shadow-glow ring-1 ring-white/20 transition-transform duration-300 group-hover:scale-105">
                         <img src="{{ asset('images/logo.png') }}" onerror="this.onerror=null;this.src='{{ asset('images/logo.svg') }}';" alt="Logo PT_apadeh" class="h-8 w-8 object-contain">
                     </div>
                     <div>
                         <span class="block font-display text-xl font-extrabold tracking-wider text-white">PT_apadeh</span>
-                        <span class="block text-[9px] font-bold uppercase tracking-[0.22em] text-accent-400">Pusat Material &amp; Bangunan</span>
+                        <span class="block text-[9px] font-bold uppercase tracking-[0.22em] text-accent-400">Boutique Jam Tangan Mewah</span>
                     </div>
                 </a>
             </div>
 
             <!-- Desktop Nav Menu -->
             <nav class="hidden items-center gap-8 text-xs font-extrabold uppercase tracking-widest text-steel-400 lg:flex" aria-label="Navigasi utama">
-                <a href="{{ route('home') }}#gudang" class="transition hover:text-white">Lokasi Gudang</a>
-                <a href="{{ route('home') }}#produk" class="border-b-2 border-accent-400 pb-1 text-white transition hover:text-accent-400">Katalog Material</a>
-                <a href="{{ route('home') }}#inspeksi-3d" class="transition hover:text-white">Inspeksi 3D</a>
-                <a href="{{ route('home') }}#tentang-kami" class="transition hover:text-white">Tentang Kami</a>
-                <a href="{{ route('home') }}#estimasi" class="transition hover:text-white">Hitung RAB</a>
+                <a href="{{ route('home') }}#salon" class="transition hover:text-white">Salon Boutique</a>
+                <a href="{{ route('home') }}#produk" class="border-b-2 border-accent-400 pb-1 text-white transition hover:text-accent-400">Koleksi Jam Tangan</a>
+                <a href="{{ route('home') }}#inspeksi-3d" class="transition hover:text-white">Inspeksi Horologi 3D</a>
+                <a href="{{ route('home') }}#tentang-kami" class="transition hover:text-white">Heritage &amp; Keaslian</a>
+                <a href="{{ route('home') }}#concierge" class="transition hover:text-white">Layanan Concierge</a>
                 <div class="flex items-center gap-2 border-l border-white/10 pl-6 text-steel-400">
                     <span class="font-bold text-accent-400">ID</span>
                     <span class="text-steel-600">/</span>
@@ -179,8 +185,8 @@
                     <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
                     Admin Panel
                 </a>
-                <a href="https://wa.me/6281234567890?text={{ rawurlencode('Halo PT_apadeh, saya ingin konsultasi kebutuhan material bangunan dan minta penawaran harga resmi.') }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg bg-accent-500 px-4 py-2 text-xs font-extrabold uppercase tracking-wider text-dark-950 shadow-glow transition duration-200 hover:bg-accent-400">
-                    Minta Penawaran
+                <a href="https://wa.me/6281234567890?text={{ rawurlencode('Halo Concierge PT_apadeh, saya ingin konsultasi koleksi jam tangan mewah dan reservasi private viewing.') }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg bg-accent-500 px-4 py-2 text-xs font-extrabold uppercase tracking-wider text-dark-950 shadow-glow transition duration-200 hover:bg-accent-400">
+                    Konsultasi Concierge
                 </a>
             </div>
         </div>
@@ -188,14 +194,14 @@
         <!-- Mobile Drawer -->
         <div id="mobile-menu" class="hidden border-t border-white/10 bg-dark-950/95 px-4 py-5 shadow-2xl backdrop-blur-2xl lg:hidden">
             <nav class="flex flex-col gap-2 text-xs font-extrabold uppercase tracking-widest text-steel-300" aria-label="Navigasi mobile">
-                <a href="{{ route('home') }}#gudang" class="rounded-lg px-3 py-2.5 transition hover:bg-white/5 hover:text-white">Lokasi Gudang</a>
-                <a href="{{ route('home') }}#produk" class="rounded-lg px-3 py-2.5 text-accent-400 transition hover:bg-white/5">Katalog Material</a>
-                <a href="{{ route('home') }}#inspeksi-3d" class="rounded-lg px-3 py-2.5 transition hover:bg-white/5 hover:text-white">Inspeksi 3D</a>
-                <a href="{{ route('home') }}#tentang-kami" class="rounded-lg px-3 py-2.5 transition hover:bg-white/5 hover:text-white">Tentang Kami</a>
-                <a href="{{ route('home') }}#estimasi" class="rounded-lg px-3 py-2.5 transition hover:bg-white/5 hover:text-white">Hitung RAB</a>
+                <a href="{{ route('home') }}#salon" class="rounded-lg px-3 py-2.5 transition hover:bg-white/5 hover:text-white">Salon Boutique</a>
+                <a href="{{ route('home') }}#produk" class="rounded-lg px-3 py-2.5 text-accent-400 transition hover:bg-white/5">Koleksi Jam Tangan</a>
+                <a href="{{ route('home') }}#inspeksi-3d" class="rounded-lg px-3 py-2.5 transition hover:bg-white/5 hover:text-white">Inspeksi Horologi 3D</a>
+                <a href="{{ route('home') }}#tentang-kami" class="rounded-lg px-3 py-2.5 transition hover:bg-white/5 hover:text-white">Heritage &amp; Keaslian</a>
+                <a href="{{ route('home') }}#concierge" class="rounded-lg px-3 py-2.5 transition hover:bg-white/5 hover:text-white">Layanan Concierge</a>
                 <a href="{{ route('admin.products.index') }}" class="rounded-lg px-3 py-2.5 transition hover:bg-white/5 hover:text-white">Admin Panel</a>
                 <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-accent-500 px-4 py-3 font-extrabold text-dark-950 shadow-glow">
-                    Minta Penawaran via WhatsApp
+                    Konsultasi via WhatsApp
                 </a>
             </nav>
         </div>
@@ -217,52 +223,51 @@
                         </div>
                         <div>
                             <span class="block font-display text-2xl font-extrabold tracking-wider text-white">PT_apadeh</span>
-                            <span class="block text-[9px] font-bold uppercase tracking-[0.22em] text-accent-400">Material &amp; Konstruksi</span>
+                            <span class="block text-[9px] font-bold uppercase tracking-[0.22em] text-accent-400">Haute Horlogerie &amp; Luxury Timepieces</span>
                         </div>
                     </div>
                     <p class="mt-5 max-w-sm text-xs leading-relaxed text-steel-400">
-                        Distributor resmi semen, besi beton SNI, bata merah press, baja ringan, pipa PVC, dan cat pelapis anti bocor. Memasok kebutuhan proyek infrastruktur, gedung, ruko, dan residensial di seluruh Indonesia.
+                        Boutique kurasi jam tangan mewah dan haute horlogerie terpercaya di Indonesia. Setiap karya arloji terverifikasi 100% original, dilengkapi sertifikat keaslian, kotak resmi pabrikan, dan garansi internasional.
                     </p>
                     <div class="mt-6 flex items-center gap-2 text-xs font-bold text-accent-400">
                         <span class="h-2 w-2 rounded-full bg-accent-400 animate-ping"></span>
-                        Armada Logistik Standar SNI Siap Kirim
+                        100% Original &bull; Garansi Internasional Resmi
                     </div>
                 </div>
 
                 <div>
-                    <h3 class="text-xs font-extrabold uppercase tracking-widest text-white">Kategori Material</h3>
+                    <h3 class="text-xs font-extrabold uppercase tracking-widest text-white">Koleksi Jam Tangan</h3>
                     <ul class="mt-4 space-y-2.5 text-xs text-steel-400">
-                        <li><a href="{{ route('home', ['category' => 'semen-mortar']).'#produk' }}" class="transition hover:text-white">Semen &amp; Mortar Instan</a></li>
-                        <li><a href="{{ route('home', ['category' => 'besi-baja-ringan']).'#produk' }}" class="transition hover:text-white">Besi Beton &amp; Baja Ringan</a></li>
-                        <li><a href="{{ route('home', ['category' => 'bata-material-dasar']).'#produk' }}" class="transition hover:text-white">Bata Merah &amp; Hebel</a></li>
-                        <li><a href="{{ route('home', ['category' => 'cat-pelapis']).'#produk' }}" class="transition hover:text-white">Cat &amp; Waterproofing AM</a></li>
-                        <li><a href="{{ route('home', ['category' => 'keramik-granit']).'#produk' }}" class="transition hover:text-white">Granit Tile 60x60</a></li>
-                        <li><a href="{{ route('home', ['category' => 'atap-pipa']).'#produk' }}" class="transition hover:text-white">Pipa PVC &amp; Atap Spandek</a></li>
+                        <li><a href="{{ route('home', ['category' => 'luxury-automatic']).'#produk' }}" class="transition hover:text-white">Luxury Automatic</a></li>
+                        <li><a href="{{ route('home', ['category' => 'chronograph-racing']).'#produk' }}" class="transition hover:text-white">Chronograph &amp; Racing</a></li>
+                        <li><a href="{{ route('home', ['category' => 'diver-pro']).'#produk' }}" class="transition hover:text-white">Diver &amp; Professional 300M</a></li>
+                        <li><a href="{{ route('home', ['category' => 'avant-garde-titanium']).'#produk' }}" class="transition hover:text-white">Avant-Garde &amp; Titanium</a></li>
+                        <li><a href="{{ route('home', ['category' => 'classic-dress']).'#produk' }}" class="transition hover:text-white">Classic &amp; Dress Watch</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-xs font-extrabold uppercase tracking-widest text-white">Logistik &amp; Gudang</h3>
+                    <h3 class="text-xs font-extrabold uppercase tracking-widest text-white">Layanan &amp; Butik</h3>
                     <ul class="mt-4 space-y-2.5 text-xs text-steel-400">
-                        <li>Senin — Sabtu (08.00 — 17.00 WIB)</li>
-                        <li>Dispatch Truk Crane &amp; Tronton</li>
-                        <li>Layanan Muat Cepat Forklift</li>
-                        <li>Konsultasi Hitung RAB Gratis</li>
+                        <li>Senin — Minggu (10.00 — 21.00 WIB)</li>
+                        <li>Private Salon VIP Viewing</li>
+                        <li>Sertifikasi Keaslian &amp; Uji Akurasi</li>
+                        <li>Trade-in &amp; Appraisal Koleksi</li>
                         <li class="pt-2"><a href="{{ route('admin.products.index') }}" class="font-bold text-accent-400 hover:underline">Panel Inventori Admin &rarr;</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-xs font-extrabold uppercase tracking-widest text-white">Kontak Proyek</h3>
-                    <p class="mt-4 text-xs text-steel-400">Kawasan Pergudangan Logistik Material, Jawa Barat — Indonesia</p>
-                    <p class="mt-2 text-xs font-bold text-white">Hotline: +62 812-3456-7890</p>
-                    <p class="text-xs text-steel-400">Email: proyek@ptapadeh.com</p>
+                    <h3 class="text-xs font-extrabold uppercase tracking-widest text-white">Private Concierge</h3>
+                    <p class="mt-4 text-xs text-steel-400">Haute Horlogerie Gallery, Sudirman Central Business District (SCBD), Jakarta — Indonesia</p>
+                    <p class="mt-2 text-xs font-bold text-white">VIP Hotline: +62 812-3456-7890</p>
+                    <p class="text-xs text-steel-400">Email: concierge@ptapadeh.com</p>
                 </div>
             </div>
 
             <div class="mt-12 flex flex-col justify-between border-t border-white/[0.08] pt-8 text-[11px] text-steel-500 sm:flex-row sm:items-center">
-                <p>&copy; {{ date('Y') }} PT_apadeh. Seluruh hak cipta dilindungi. Distributor Material Konstruksi Resmi.</p>
-                <p class="mt-2 sm:mt-0 font-display text-steel-400 tracking-wider uppercase">Pondasi Kuat &bull; Proyek Tepat &bull; Mutu Terhebat</p>
+                <p>&copy; {{ date('Y') }} PT_apadeh. Seluruh hak cipta dilindungi. Butik Jam Tangan Mewah Terpercaya.</p>
+                <p class="mt-2 sm:mt-0 font-display text-steel-400 tracking-wider uppercase">Mastery of Time &bull; Pure Craftsmanship &bull; Timeless Elegance</p>
             </div>
         </div>
     </footer>

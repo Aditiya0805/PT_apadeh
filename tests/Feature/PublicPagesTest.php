@@ -14,15 +14,15 @@ class PublicPagesTest extends TestCase
     public function test_home_page_displays_business_profile_and_product_catalog(): void
     {
         $category = Category::factory()->create([
-            'name' => 'Semen & Mortar',
-            'slug' => 'semen-mortar',
+            'name' => 'Luxury Automatic',
+            'slug' => 'luxury-automatic',
         ]);
 
         $product = Product::factory()->for($category)->create([
-            'name' => 'Semen Portland PCC 50kg SNI',
-            'description' => 'Semen berkualitas tinggi berstandar SNI untuk struktur kokoh.',
-            'price' => 68000,
-            'image' => 'products/semen-portland-50kg.svg',
+            'name' => 'Rolex Submariner Date 41mm Cerachrom',
+            'description' => 'Jam tangan penyelam legendaris dengan bezel keramik Cerachrom hitam.',
+            'price' => 245000000,
+            'image' => 'products/rolex-submariner-date.png',
         ]);
 
         $response = $this->get(route('home'));
@@ -30,49 +30,49 @@ class PublicPagesTest extends TestCase
         $response
             ->assertOk()
             ->assertSee('PT_apadeh')
-            ->assertSee('Pusat Material & Bangunan')
-            ->assertSee('Semen & Mortar')
+            ->assertSee('Boutique Jam Tangan Mewah')
+            ->assertSee('Luxury Automatic')
             ->assertSee($product->name)
-            ->assertSee('Rp 68.000');
+            ->assertSee('Rp 245.000.000');
     }
 
     public function test_home_page_can_filter_products_by_category(): void
     {
-        $cementCategory = Category::factory()->create([
-            'name' => 'Semen & Mortar',
-            'slug' => 'semen-mortar',
+        $diverCategory = Category::factory()->create([
+            'name' => 'Diver & Professional',
+            'slug' => 'diver-pro',
         ]);
-        $steelCategory = Category::factory()->create([
-            'name' => 'Besi & Baja Ringan',
-            'slug' => 'besi-baja-ringan',
+        $chronoCategory = Category::factory()->create([
+            'name' => 'Chronograph & Racing',
+            'slug' => 'chronograph-racing',
         ]);
 
-        $cement = Product::factory()->for($cementCategory)->create();
-        $steel = Product::factory()->for($steelCategory)->create();
+        $diver = Product::factory()->for($diverCategory)->create();
+        $chrono = Product::factory()->for($chronoCategory)->create();
 
-        $response = $this->get(route('home', ['category' => 'besi-baja-ringan']));
+        $response = $this->get(route('home', ['category' => 'chronograph-racing']));
 
         $response
             ->assertOk()
-            ->assertSee('Katalog Besi & Baja Ringan')
-            ->assertViewHas('products', function ($products) use ($steel, $cement): bool {
+            ->assertSee('Katalog Chronograph & Racing')
+            ->assertViewHas('products', function ($products) use ($chrono, $diver): bool {
                 return $products->total() === 1
-                    && $products->first()->is($steel)
-                    && ! $products->contains($cement);
+                    && $products->first()->is($chrono)
+                    && ! $products->contains($diver);
             });
     }
 
     public function test_product_detail_page_displays_complete_product_information(): void
     {
         $category = Category::factory()->create([
-            'name' => 'Besi & Baja Ringan',
-            'slug' => 'besi-baja-ringan',
+            'name' => 'Chronograph & Racing',
+            'slug' => 'chronograph-racing',
         ]);
 
         $product = Product::factory()->for($category)->create([
-            'name' => 'Besi Beton Ulir D13 SNI',
-            'description' => 'Besi beton ulir standar SNI untuk struktur kuat dan kokoh.',
-            'price' => 135000,
+            'name' => 'Rolex Cosmograph Daytona Oysterflex',
+            'description' => 'Ikon sirkuit balap dunia dengan bezel Cerachrom takimeter presisi tinggi.',
+            'price' => 585000000,
         ]);
 
         $response = $this->get(route('products.show', $product));
@@ -81,8 +81,8 @@ class PublicPagesTest extends TestCase
             ->assertOk()
             ->assertSee($product->name)
             ->assertSee($product->description)
-            ->assertSee('Besi & Baja Ringan')
-            ->assertSee('Rp 135.000');
+            ->assertSee('Chronograph & Racing')
+            ->assertSee('Rp 585.000.000');
     }
 
     public function test_unknown_product_returns_not_found_page(): void

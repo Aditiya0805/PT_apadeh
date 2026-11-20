@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="#0F172A">
-    <title>@yield('title', 'Panel Admin Material — PT_apadeh')</title>
+    <title>@yield('title', 'Panel Admin Jam Tangan — PT_apadeh')</title>
 
     <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
     <link rel="icon" type="image/svg+xml" href="{{ asset('images/logo.svg') }}">
@@ -87,7 +87,7 @@
                 </span>
                 <span>
                     <span class="block font-sans text-lg font-black tracking-tight text-white">PT_apadeh</span>
-                    <span class="block text-[9px] font-bold uppercase tracking-[0.2em] text-brand-400">Admin Material</span>
+                    <span class="block text-[9px] font-bold uppercase tracking-[0.2em] text-brand-400">Admin Jam Tangan</span>
                 </span>
             </a>
 
@@ -103,14 +103,14 @@
                         <rect x="3" y="14" width="7" height="7" rx="1"/>
                         <rect x="14" y="14" width="7" height="7" rx="1"/>
                     </svg>
-                    Katalog Material
+                    Koleksi Jam Tangan
                 </a>
                 <a href="{{ route('admin.products.create') }}" class="flex items-center gap-3 rounded-xl px-3.5 py-3 text-sm font-bold transition {{ request()->routeIs('admin.products.create') ? 'bg-steel-800 text-white' : 'text-steel-400 hover:bg-steel-900 hover:text-white' }}">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="9"/>
                         <path d="M12 8v8M8 12h8" stroke-linecap="round"/>
                     </svg>
-                    Tambah Material
+                    Tambah Jam Tangan
                 </a>
                 <a href="{{ route('home') }}" class="flex items-center gap-3 rounded-xl px-3.5 py-3 text-sm font-bold text-steel-400 transition hover:bg-steel-900 hover:text-white">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -126,16 +126,16 @@
                         <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-brand-500/20 text-brand-400">
                             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         </span>
-                        <p class="text-xs font-bold text-white">Stok &amp; Harga Realtime</p>
+                        <p class="text-xs font-bold text-white">Stok &amp; Harga Butik</p>
                     </div>
-                    <p class="mt-2 text-[11px] leading-relaxed text-steel-400">Pastikan harga besi, semen, dan material dasar selalu sesuai dengan harga pabrikan terkini.</p>
+                    <p class="mt-2 text-[11px] leading-relaxed text-steel-400">Pastikan ketersediaan stok arloji, nomor kaliber, dan harga butik selalu terverifikasi.</p>
                 </div>
 
                 <div class="mt-5 flex items-center gap-3 border-t border-steel-900 px-2 pt-5">
                     <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-xs font-black text-white">AP</span>
                     <div>
                         <p class="text-xs font-bold text-white">Admin PT_apadeh</p>
-                        <p class="text-[10px] text-steel-500">Logistik &amp; Material</p>
+                        <p class="text-[10px] text-steel-500">Haute Horlogerie</p>
                     </div>
                 </div>
             </div>

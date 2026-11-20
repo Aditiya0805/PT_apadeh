@@ -8,34 +8,30 @@ use Illuminate\Database\Seeder;
 class CategorySeeder extends Seeder
 {
     /**
-     * Seed the application's material categories.
+     * Seed the application's watch boutique categories.
      */
     public function run(): void
     {
         $categories = [
             [
-                'name' => 'Semen & Mortar',
-                'slug' => 'semen-mortar',
+                'name' => 'Luxury Automatic',
+                'slug' => 'luxury-automatic',
             ],
             [
-                'name' => 'Besi & Baja Ringan',
-                'slug' => 'besi-baja-ringan',
+                'name' => 'Chronograph & Racing',
+                'slug' => 'chronograph-racing',
             ],
             [
-                'name' => 'Bata & Material Dasar',
-                'slug' => 'bata-material-dasar',
+                'name' => 'Diver & Professional',
+                'slug' => 'diver-pro',
             ],
             [
-                'name' => 'Cat & Pelapis',
-                'slug' => 'cat-pelapis',
+                'name' => 'Avant-Garde & Titanium',
+                'slug' => 'avant-garde-titanium',
             ],
             [
-                'name' => 'Keramik & Granit',
-                'slug' => 'keramik-granit',
-            ],
-            [
-                'name' => 'Atap & Pipa',
-                'slug' => 'atap-pipa',
+                'name' => 'Classic & Dress Watch',
+                'slug' => 'classic-dress',
             ],
         ];
 

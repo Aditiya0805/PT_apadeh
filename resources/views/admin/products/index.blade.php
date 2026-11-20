@@ -1,18 +1,18 @@
 @extends('layouts.admin')
 
-@section('title', 'Kelola Produk Material — Admin PT_apadeh')
-@section('page_label', 'Katalog Material')
+@section('title', 'Kelola Produk Jam Tangan — Admin PT_apadeh')
+@section('page_label', 'Koleksi Jam Tangan')
 
 @section('content')
     <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
             <p class="text-xs font-extrabold uppercase tracking-widest text-brand-600">Manajemen Inventori</p>
-            <h1 class="mt-1 font-sans text-2xl font-black tracking-tight text-steel-950 sm:text-3xl">Kelola produk material</h1>
-            <p class="mt-1 max-w-xl text-xs text-steel-500">Tambah, perbarui, atau hapus material bangunan yang tampil di website PT_apadeh.</p>
+            <h1 class="mt-1 font-sans text-2xl font-black tracking-tight text-steel-950 sm:text-3xl">Kelola produk jam tangan</h1>
+            <p class="mt-1 max-w-xl text-xs text-steel-500">Tambah, perbarui, atau hapus koleksi jam tangan mewah yang tampil di website PT_apadeh.</p>
         </div>
         <a href="{{ route('admin.products.create') }}" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-steel-900 px-5 py-2.5 text-xs font-bold text-white shadow-sm transition duration-200 hover:bg-brand-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
-            Tambah Material Baru
+            Tambah Jam Tangan Baru
         </a>
     </div>
 
@@ -21,14 +21,14 @@
         <div class="rounded-xl border border-steel-200/90 bg-white p-4 shadow-sm">
             <div class="flex items-start justify-between">
                 <div>
-                    <p class="text-[10px] font-bold uppercase tracking-wider text-steel-400">Total Material</p>
+                    <p class="text-[10px] font-bold uppercase tracking-wider text-steel-400">Total Jam Tangan</p>
                     <p class="mt-1 font-sans text-2xl font-black text-steel-950">{{ $productCount }}</p>
                 </div>
                 <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-brand-50 text-brand-600">
-                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m19 11-8-8-8.6 8.6a2 2 0 0 0 0 2.8l5.2 5.2c.8.8 2 .8 2.8 0L19 11Z"/></svg>
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 </span>
             </div>
-            <p class="mt-2 text-[11px] text-steel-400">Material aktif di katalog publik</p>
+            <p class="mt-2 text-[11px] text-steel-400">Arloji aktif di katalog publik</p>
         </div>
 
         <div class="rounded-xl border border-steel-200/90 bg-white p-4 shadow-sm">
@@ -66,13 +66,13 @@
                     <span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-steel-400">
                         <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
                     </span>
-                    <label for="search" class="sr-only">Cari produk material</label>
+                    <label for="search" class="sr-only">Cari koleksi jam tangan</label>
                     <input
                         id="search"
                         name="search"
                         type="search"
                         value="{{ $search }}"
-                        placeholder="Cari nama material, semen, besi, bata..."
+                        placeholder="Cari Rolex, Submariner, Daytona, Diver..."
                         class="w-full rounded-lg border border-steel-200 bg-steel-50 py-2.5 pl-10 pr-4 text-xs text-steel-900 outline-none transition placeholder:text-steel-400 focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-100"
                     >
                 </div>
@@ -88,7 +88,7 @@
                 </div>
             </form>
 
-            <p class="text-xs font-semibold text-steel-500">{{ $products->firstItem() ?? 0 }}—{{ $products->lastItem() ?? 0 }} dari {{ $products->total() }} material</p>
+            <p class="text-xs font-semibold text-steel-500">{{ $products->firstItem() ?? 0 }}—{{ $products->lastItem() ?? 0 }} dari {{ $products->total() }} arloji</p>
         </div>
 
         @if ($products->isEmpty())
@@ -96,12 +96,12 @@
                 <span class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-steel-100 text-steel-400">
                     <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21 21-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"/></svg>
                 </span>
-                <h2 class="mt-3 font-sans text-lg font-bold text-steel-900">{{ $search !== '' ? 'Material Tidak Ditemukan' : 'Katalog Material Kosong' }}</h2>
-                <p class="mt-1 max-w-sm text-xs text-steel-500">{{ $search !== '' ? 'Coba gunakan kata kunci lain seperti "semen", "besi", atau "hebel".' : 'Tambahkan material pertama Anda agar muncul di website publik.' }}</p>
+                <h2 class="mt-3 font-sans text-lg font-bold text-steel-900">{{ $search !== '' ? 'Jam Tangan Tidak Ditemukan' : 'Katalog Jam Tangan Kosong' }}</h2>
+                <p class="mt-1 max-w-sm text-xs text-steel-500">{{ $search !== '' ? 'Coba gunakan kata kunci lain seperti "Rolex", "Submariner", atau "Automatic".' : 'Tambahkan jam tangan pertama Anda agar muncul di website publik.' }}</p>
                 @if ($search !== '')
                     <a href="{{ route('admin.products.index') }}" class="mt-4 inline-flex items-center gap-2 rounded-lg border border-steel-300 bg-white px-4 py-2 text-xs font-bold text-steel-800 hover:bg-steel-50">Reset Pencarian</a>
                 @else
-                    <a href="{{ route('admin.products.create') }}" class="mt-4 inline-flex items-center gap-2 rounded-lg bg-steel-900 px-4 py-2 text-xs font-bold text-white hover:bg-brand-600">Tambah Material</a>
+                    <a href="{{ route('admin.products.create') }}" class="mt-4 inline-flex items-center gap-2 rounded-lg bg-steel-900 px-4 py-2 text-xs font-bold text-white hover:bg-brand-600">Tambah Jam Tangan</a>
                 @endif
             </div>
         @else
@@ -110,7 +110,7 @@
                 <table class="w-full min-w-[760px] text-left">
                     <thead>
                         <tr class="border-b border-steel-100 bg-steel-50 text-[10px] font-extrabold uppercase tracking-wider text-steel-400">
-                            <th scope="col" class="px-5 py-3.5">Material</th>
+                            <th scope="col" class="px-5 py-3.5">Jam Tangan</th>
                             <th scope="col" class="px-5 py-3.5">Kategori</th>
                             <th scope="col" class="px-5 py-3.5">Harga Satuan</th>
                             <th scope="col" class="px-5 py-3.5">Terakhir Diupdate</th>

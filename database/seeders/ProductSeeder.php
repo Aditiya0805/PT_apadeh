@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Storage;
 class ProductSeeder extends Seeder
 {
     /**
-     * Seed the application's material products and copy their placeholder images.
+     * Seed the application's luxury watch boutique products.
      */
     public function run(): void
     {
@@ -21,74 +21,46 @@ class ProductSeeder extends Seeder
 
         $products = [
             [
-                'category' => 'semen-mortar',
-                'name' => 'Semen Portland PCC 50kg SNI',
-                'description' => 'Semen Portland Composite Cement (PCC) dengan daya rekat ekstra kuat dan hasil akhir halus tanpa retak rambut. Ideal untuk pengecoran pondasi, struktur balok beton, pasangan bata, dan plesteran dinding.',
-                'price' => 68000,
-                'image' => 'semen-portland-50kg.png',
+                'category' => 'diver-pro',
+                'name' => 'Rolex Submariner Date 41mm Cerachrom',
+                'description' => 'Jam tangan penyelam legendaris dengan bezel keramik Cerachrom hitam anti-gores, dial hitam legap dengan indeks Chromalight berpendar biru cerah. Ditenagai kaliber otomatis 3235 dengan cadangan daya 70 jam dan ketahanan air hingga kedalaman 300 meter.',
+                'price' => 245000000,
+                'image' => 'rolex-submariner-date.png',
             ],
             [
-                'category' => 'semen-mortar',
-                'name' => 'Mortar Perekat Bata Ringan ThinBed 40kg',
-                'description' => 'Semen instan siap pakai formula khusus untuk perekat bata ringan (AAC/hebel). Cukup ditambah air, berdaya rekat superior dengan ketebalan aplikasi tipis 3mm sehingga pengerjaan dinding lebih cepat dan hemat biaya.',
-                'price' => 85000,
-                'image' => 'mortar-perekat-hebel.svg',
+                'category' => 'chronograph-racing',
+                'name' => 'Rolex Cosmograph Daytona Oysterflex',
+                'description' => 'Ikon sirkuit balap dunia dengan bezel Cerachrom takimeter presisi tinggi, casing emas putih 18 karat, dial perak sunburst dengan sub-dial kontras, serta strap Oysterflex elastomer berteknologi bilah logam fleksibel. Digerakkan kaliber chronograph 4130.',
+                'price' => 585000000,
+                'image' => 'rolex-cosmograph-daytona.png',
             ],
             [
-                'category' => 'besi-baja-ringan',
-                'name' => 'Besi Beton Ulir D13 SNI Full (12 Meter)',
-                'description' => 'Besi beton ulir berstandar resmi SNI 2052:2017 berdiameter 13mm panjang utuh 12 meter. Memiliki batas luluh tinggi, daya cengkeram beton maksimal, sangat kokoh untuk struktur kolom gedung dan sloof pondasi.',
-                'price' => 135000,
-                'image' => 'besi-beton-ulir-d13.svg',
+                'category' => 'luxury-automatic',
+                'name' => 'Rolex Datejust 41 Bright Blue Dial Jubilee',
+                'description' => 'Simbol keanggunan klasik dengan dial biru sunburst cemerlang, bezel fluted emas putih berkilau, dan rantai Jubilee lima baris yang sangat ergonomis. Dilengkapi jendela tanggal Cyclops pembesar 2.5x dan mekanisme otomatis kaliber 3235 bersertifikasi Superlative Chronometer.',
+                'price' => 195000000,
+                'image' => 'rolex-datejust-41-blue.png',
             ],
             [
-                'category' => 'besi-baja-ringan',
-                'name' => 'Baja Ringan Canal C75.75 ZincAlum (6 Meter)',
-                'description' => 'Rangka atap baja ringan profil C ukuran 75x75 dengan ketebalan 0.75mm berbahan dasar baja ZincAlum anti karat. Presisi dimensi tinggi, ringan, tahan rayap serta api, dan kuat menahan beban genteng berat.',
-                'price' => 92000,
-                'image' => 'baja-ringan-canal-c75.jpg',
+                'category' => 'diver-pro',
+                'name' => 'Heritage Diver Oceanic 300M Beads-of-Rice',
+                'description' => 'Jam tangan selam bergaya vintage dengan gradasi dial biru samudra berpendar luks, bezel rotasi keramik satu arah 120 klik, dan rantai beads-of-rice stainless steel 316L yang lentur. Memiliki ketahanan tekanan laut dalam 300 meter dengan katup helium escapement.',
+                'price' => 42500000,
+                'image' => 'heritage-diver-oceanic.png',
             ],
             [
-                'category' => 'bata-material-dasar',
-                'name' => 'Bata Merah Press Bakar Super (Per 1.000 Pcs)',
-                'description' => 'Bata merah press bakar kualitas super dengan tingkat kepadatan tinggi, presisi, kokoh, dan tahan rembesan air. Sangat ideal untuk dinding rumah tinggal, ruko, pagar keliling, dan konstruksi gedung.',
-                'price' => 750000,
-                'image' => 'bata-merah-press.png',
+                'category' => 'avant-garde-titanium',
+                'name' => 'Aura Stealth Minimalist Titanium Edition',
+                'description' => 'Mahakarya minimalis avant-garde berbahan casing & rantai Titanium Grade 5 ultra ringan dengan lapisan DLC matte anthracite anti gores. Desain dial monokromatis bersih tanpa tanggal dengan jarum lance presisi dan kaliber otomatis slimline 28.800 vph.',
+                'price' => 28500000,
+                'image' => 'aura-stealth-minimalist.png',
             ],
             [
-                'category' => 'cat-pelapis',
-                'name' => 'Cat Waterproofing Pelapis Anti Bocor 20kg',
-                'description' => 'Cat pelapis anti bocor berbahan dasar elastomerik akrilik kedap air elastis hingga 400%. Sangat efektif menutup retak rambut dak beton, dinding samping luar rumah, talang air, dan sambungan atap dari kebocoran.',
-                'price' => 890000,
-                'image' => 'cat-waterproofing-20kg.jpg',
-            ],
-            [
-                'category' => 'cat-pelapis',
-                'name' => 'Cat Tembok Eksterior WeatherShield 20 Liter',
-                'description' => 'Cat pelindung dinding eksterior premium dengan teknologi UV-Reflect untuk menjaga suhu ruangan lebih sejuk. Anti lumut, anti jamur, tahan cuaca tropis ekstrem hingga 8 tahun tanpa memudar.',
-                'price' => 1450000,
-                'image' => 'cat-eksterior-weathershield.svg',
-            ],
-            [
-                'category' => 'keramik-granit',
-                'name' => 'Granit Tile Glazed Polished 60x60 Royal White (1 Dus)',
-                'description' => 'Lantai granit tile porcelain glazed polished motif marmer carara mewah ukuran 60x60 cm (isi 4 lembar / 1.44 m²). Permukaan nano-gloss kilap tinggi, anti gores, tahan noda cairan, dan mudah dibersihkan.',
-                'price' => 215000,
-                'image' => 'granit-tile-60x60.jpg',
-            ],
-            [
-                'category' => 'atap-pipa',
-                'name' => 'Pipa PVC AW 3 Inch SNI (Panjang 4 Meter)',
-                'description' => 'Pipa PVC berstandar SNI kelas AW untuk saluran air bersih utama dan drainase bertekanan tinggi hingga 10 bar. Dinding pipa tebal, bebas timbal racun, anti korosi kimia, dan kuat terhadap tekanan tanah.',
-                'price' => 110000,
-                'image' => 'pipa-pvc-aw-3inch.jpg',
-            ],
-            [
-                'category' => 'atap-pipa',
-                'name' => 'Atap Spandek Zincalume Tebal 0.35mm (Lebar 1m)',
-                'description' => 'Lembaran seng atap gelombang zincalume dengan ketebalan 0.35mm. Sangat tahan korosi dan karat, ringan sehingga menghemat struktur rangka, serta cocok untuk kanopi garasi, gudang, pabrik, maupun hunian modern.',
-                'price' => 58000,
-                'image' => 'atap-spandek-zincalume.svg',
+                'category' => 'classic-dress',
+                'name' => 'Casio Classic Stainless Steel Roman Dial 50M',
+                'description' => 'Jam tangan dress klasik esensial dengan dial hitam bertekstur sunray elegan dan angka Romawi klasik di posisi XII, VI, dan IX. Casing dan rantai stainless steel solid, ketahanan air 50 meter, serta pergerakan quartz Jepang dengan akurasi tinggi dan baterai tahan lama.',
+                'price' => 1250000,
+                'image' => 'casio-classic-roman-steel.png',
             ],
         ];
 
