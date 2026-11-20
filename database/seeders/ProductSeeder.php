@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Storage;
 class ProductSeeder extends Seeder
 {
     /**
-     * Seed the application's products and copy their placeholder images.
+     * Seed the application's material products and copy their placeholder images.
      */
     public function run(): void
     {
@@ -21,46 +21,74 @@ class ProductSeeder extends Seeder
 
         $products = [
             [
-                'category' => 'makanan-berat',
-                'name' => 'Nasi Goreng Rempah Apadeh',
-                'description' => 'Nasi goreng dengan racikan rempah Nusantara, telur mata sapi, ayam suwir, dan sambal bawang rumahan. Disajikan hangat dengan aroma smoky yang menggugah selera.',
-                'price' => 28000,
-                'image' => 'nasi-goreng-rempah.svg',
+                'category' => 'semen-mortar',
+                'name' => 'Semen Portland PCC 50kg SNI',
+                'description' => 'Semen Portland Composite Cement (PCC) dengan daya rekat ekstra kuat dan hasil akhir halus tanpa retak rambut. Ideal untuk pengecoran pondasi, struktur balok beton, pasangan bata, dan plesteran dinding.',
+                'price' => 68000,
+                'image' => 'semen-portland-50kg.png',
             ],
             [
-                'category' => 'makanan-berat',
-                'name' => 'Ayam Bakar Sambal Matah',
-                'description' => 'Ayam kampung pilihan yang dibakar dengan bumbu kecap madu, disajikan bersama sambal matah segar, lalapan, dan nasi hangat.',
-                'price' => 35000,
-                'image' => 'ayam-bakar-sambal-matah.svg',
+                'category' => 'semen-mortar',
+                'name' => 'Mortar Perekat Bata Ringan ThinBed 40kg',
+                'description' => 'Semen instan siap pakai formula khusus untuk perekat bata ringan (AAC/hebel). Cukup ditambah air, berdaya rekat superior dengan ketebalan aplikasi tipis 3mm sehingga pengerjaan dinding lebih cepat dan hemat biaya.',
+                'price' => 85000,
+                'image' => 'mortar-perekat-hebel.svg',
             ],
             [
-                'category' => 'camilan',
-                'name' => 'Tahu Crispy Saus Madu',
-                'description' => 'Tahu susu yang digoreng renyah dengan lapisan tepung ringan, lalu dilelehkan bersama saus madu pedas dan taburan wijen.',
-                'price' => 18000,
-                'image' => 'tahu-crispy-saus-madu.svg',
+                'category' => 'besi-baja-ringan',
+                'name' => 'Besi Beton Ulir D13 SNI Full (12 Meter)',
+                'description' => 'Besi beton ulir berstandar resmi SNI 2052:2017 berdiameter 13mm panjang utuh 12 meter. Memiliki batas luluh tinggi, daya cengkeram beton maksimal, sangat kokoh untuk struktur kolom gedung dan sloof pondasi.',
+                'price' => 135000,
+                'image' => 'besi-beton-ulir-d13.svg',
             ],
             [
-                'category' => 'camilan',
-                'name' => 'Pisang Goreng Keju',
-                'description' => 'Pisang raja manis berbalut adonan renyah, ditaburi keju cheddar parut dan saus karamel. Camilan favorit untuk menemani waktu santai.',
-                'price' => 15000,
-                'image' => 'pisang-goreng-keju.svg',
+                'category' => 'besi-baja-ringan',
+                'name' => 'Baja Ringan Canal C75.75 ZincAlum (6 Meter)',
+                'description' => 'Rangka atap baja ringan profil C ukuran 75x75 dengan ketebalan 0.75mm berbahan dasar baja ZincAlum anti karat. Presisi dimensi tinggi, ringan, tahan rayap serta api, dan kuat menahan beban genteng berat.',
+                'price' => 92000,
+                'image' => 'baja-ringan-canal-c75.jpg',
             ],
             [
-                'category' => 'minuman',
-                'name' => 'Kopi Susu Gula Aren',
-                'description' => 'Espresso robusta pilihan yang dipadukan susu segar dan gula aren alami. Manisnya lembut dengan aroma kopi yang kuat dan seimbang.',
-                'price' => 22000,
-                'image' => 'kopi-susu-gula-aren.svg',
+                'category' => 'bata-material-dasar',
+                'name' => 'Bata Merah Press Bakar Super (Per 1.000 Pcs)',
+                'description' => 'Bata merah press bakar kualitas super dengan tingkat kepadatan tinggi, presisi, kokoh, dan tahan rembesan air. Sangat ideal untuk dinding rumah tinggal, ruko, pagar keliling, dan konstruksi gedung.',
+                'price' => 750000,
+                'image' => 'bata-merah-press.png',
             ],
             [
-                'category' => 'minuman',
-                'name' => 'Es Teh Lemon Serai',
-                'description' => 'Teh hitam dingin dengan perasan lemon segar, serai, dan sedikit madu. Ringan, menyegarkan, dan cocok dinikmati kapan saja.',
-                'price' => 12000,
-                'image' => 'es-teh-lemon-serai.svg',
+                'category' => 'cat-pelapis',
+                'name' => 'Cat Waterproofing Pelapis Anti Bocor 20kg',
+                'description' => 'Cat pelapis anti bocor berbahan dasar elastomerik akrilik kedap air elastis hingga 400%. Sangat efektif menutup retak rambut dak beton, dinding samping luar rumah, talang air, dan sambungan atap dari kebocoran.',
+                'price' => 890000,
+                'image' => 'cat-waterproofing-20kg.jpg',
+            ],
+            [
+                'category' => 'cat-pelapis',
+                'name' => 'Cat Tembok Eksterior WeatherShield 20 Liter',
+                'description' => 'Cat pelindung dinding eksterior premium dengan teknologi UV-Reflect untuk menjaga suhu ruangan lebih sejuk. Anti lumut, anti jamur, tahan cuaca tropis ekstrem hingga 8 tahun tanpa memudar.',
+                'price' => 1450000,
+                'image' => 'cat-eksterior-weathershield.svg',
+            ],
+            [
+                'category' => 'keramik-granit',
+                'name' => 'Granit Tile Glazed Polished 60x60 Royal White (1 Dus)',
+                'description' => 'Lantai granit tile porcelain glazed polished motif marmer carara mewah ukuran 60x60 cm (isi 4 lembar / 1.44 m²). Permukaan nano-gloss kilap tinggi, anti gores, tahan noda cairan, dan mudah dibersihkan.',
+                'price' => 215000,
+                'image' => 'granit-tile-60x60.jpg',
+            ],
+            [
+                'category' => 'atap-pipa',
+                'name' => 'Pipa PVC AW 3 Inch SNI (Panjang 4 Meter)',
+                'description' => 'Pipa PVC berstandar SNI kelas AW untuk saluran air bersih utama dan drainase bertekanan tinggi hingga 10 bar. Dinding pipa tebal, bebas timbal racun, anti korosi kimia, dan kuat terhadap tekanan tanah.',
+                'price' => 110000,
+                'image' => 'pipa-pvc-aw-3inch.jpg',
+            ],
+            [
+                'category' => 'atap-pipa',
+                'name' => 'Atap Spandek Zincalume Tebal 0.35mm (Lebar 1m)',
+                'description' => 'Lembaran seng atap gelombang zincalume dengan ketebalan 0.35mm. Sangat tahan korosi dan karat, ringan sehingga menghemat struktur rangka, serta cocok untuk kanopi garasi, gudang, pabrik, maupun hunian modern.',
+                'price' => 58000,
+                'image' => 'atap-spandek-zincalume.svg',
             ],
         ];
 

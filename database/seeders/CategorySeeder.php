@@ -8,22 +8,34 @@ use Illuminate\Database\Seeder;
 class CategorySeeder extends Seeder
 {
     /**
-     * Seed the application's product categories.
+     * Seed the application's material categories.
      */
     public function run(): void
     {
         $categories = [
             [
-                'name' => 'Makanan Berat',
-                'slug' => 'makanan-berat',
+                'name' => 'Semen & Mortar',
+                'slug' => 'semen-mortar',
             ],
             [
-                'name' => 'Camilan',
-                'slug' => 'camilan',
+                'name' => 'Besi & Baja Ringan',
+                'slug' => 'besi-baja-ringan',
             ],
             [
-                'name' => 'Minuman',
-                'slug' => 'minuman',
+                'name' => 'Bata & Material Dasar',
+                'slug' => 'bata-material-dasar',
+            ],
+            [
+                'name' => 'Cat & Pelapis',
+                'slug' => 'cat-pelapis',
+            ],
+            [
+                'name' => 'Keramik & Granit',
+                'slug' => 'keramik-granit',
+            ],
+            [
+                'name' => 'Atap & Pipa',
+                'slug' => 'atap-pipa',
             ],
         ];
 

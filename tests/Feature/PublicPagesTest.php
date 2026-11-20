@@ -14,15 +14,15 @@ class PublicPagesTest extends TestCase
     public function test_home_page_displays_business_profile_and_product_catalog(): void
     {
         $category = Category::factory()->create([
-            'name' => 'Makanan Berat',
-            'slug' => 'makanan-berat',
+            'name' => 'Semen & Mortar',
+            'slug' => 'semen-mortar',
         ]);
 
         $product = Product::factory()->for($category)->create([
-            'name' => 'Nasi Goreng Rempah Apadeh',
-            'description' => 'Nasi goreng rempah dengan telur mata sapi.',
-            'price' => 28000,
-            'image' => 'products/nasi-goreng.jpg',
+            'name' => 'Semen Portland PCC 50kg SNI',
+            'description' => 'Semen berkualitas tinggi berstandar SNI untuk struktur kokoh.',
+            'price' => 68000,
+            'image' => 'products/semen-portland-50kg.svg',
         ]);
 
         $response = $this->get(route('home'));
@@ -30,49 +30,49 @@ class PublicPagesTest extends TestCase
         $response
             ->assertOk()
             ->assertSee('PT_apadeh')
-            ->assertSee('UMKM Kuliner Nusantara')
-            ->assertSee('Makanan Berat')
+            ->assertSee('Pusat Material & Bangunan')
+            ->assertSee('Semen & Mortar')
             ->assertSee($product->name)
-            ->assertSee('Rp 28.000');
+            ->assertSee('Rp 68.000');
     }
 
     public function test_home_page_can_filter_products_by_category(): void
     {
-        $foodCategory = Category::factory()->create([
-            'name' => 'Makanan Berat',
-            'slug' => 'makanan-berat',
+        $cementCategory = Category::factory()->create([
+            'name' => 'Semen & Mortar',
+            'slug' => 'semen-mortar',
         ]);
-        $drinkCategory = Category::factory()->create([
-            'name' => 'Minuman',
-            'slug' => 'minuman',
+        $steelCategory = Category::factory()->create([
+            'name' => 'Besi & Baja Ringan',
+            'slug' => 'besi-baja-ringan',
         ]);
 
-        $food = Product::factory()->for($foodCategory)->create();
-        $drink = Product::factory()->for($drinkCategory)->create();
+        $cement = Product::factory()->for($cementCategory)->create();
+        $steel = Product::factory()->for($steelCategory)->create();
 
-        $response = $this->get(route('home', ['category' => 'minuman']));
+        $response = $this->get(route('home', ['category' => 'besi-baja-ringan']));
 
         $response
             ->assertOk()
-            ->assertSee('Menu Minuman')
-            ->assertViewHas('products', function ($products) use ($drink, $food): bool {
+            ->assertSee('Katalog Besi & Baja Ringan')
+            ->assertViewHas('products', function ($products) use ($steel, $cement): bool {
                 return $products->total() === 1
-                    && $products->first()->is($drink)
-                    && ! $products->contains($food);
+                    && $products->first()->is($steel)
+                    && ! $products->contains($cement);
             });
     }
 
     public function test_product_detail_page_displays_complete_product_information(): void
     {
         $category = Category::factory()->create([
-            'name' => 'Minuman',
-            'slug' => 'minuman',
+            'name' => 'Besi & Baja Ringan',
+            'slug' => 'besi-baja-ringan',
         ]);
 
         $product = Product::factory()->for($category)->create([
-            'name' => 'Kopi Susu Gula Aren',
-            'description' => 'Espresso dengan susu segar dan gula aren alami.',
-            'price' => 22000,
+            'name' => 'Besi Beton Ulir D13 SNI',
+            'description' => 'Besi beton ulir standar SNI untuk struktur kuat dan kokoh.',
+            'price' => 135000,
         ]);
 
         $response = $this->get(route('products.show', $product));
@@ -81,8 +81,8 @@ class PublicPagesTest extends TestCase
             ->assertOk()
             ->assertSee($product->name)
             ->assertSee($product->description)
-            ->assertSee('Minuman')
-            ->assertSee('Rp 22.000');
+            ->assertSee('Besi & Baja Ringan')
+            ->assertSee('Rp 135.000');
     }
 
     public function test_unknown_product_returns_not_found_page(): void

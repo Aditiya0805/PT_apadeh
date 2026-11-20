@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+    <defs>
+        <linearGradient id="bgHebel" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0F172A"/>
+            <stop offset="100%" stop-color="#1E293B"/>
+        </linearGradient>
+        <linearGradient id="hebelTop" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#E2E8F0"/>
+        </linearGradient>
+        <linearGradient id="hebelLeft" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#E2E8F0"/>
+            <stop offset="100%" stop-color="#CBD5E1"/>
+        </linearGradient>
+        <linearGradient id="hebelRight" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#CBD5E1"/>
+            <stop offset="100%" stop-color="#94A3B8"/>
+        </linearGradient>
+        <filter id="shadowHebel" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.5"/>
+        </filter>
+    </defs>
+    <rect width="800" height="600" fill="url(#bgHebel)"/>
+    <circle cx="400" cy="300" r="230" fill="#F97316" opacity="0.1" filter="blur(40px)"/>
+    <!-- Stack of AAC Lightweight Blocks in Isometric -->
+    <g transform="translate(180, 100)" filter="url(#shadowHebel)">
+        <!-- Bottom Pallet Wood -->
+        <rect x="20" y="360" width="400" height="24" rx="4" fill="#92400E"/>
+        <rect x="50" y="384" width="40" height="20" fill="#78350F"/>
+        <rect x="200" y="384" width="40" height="20" fill="#78350F"/>
+        <rect x="350" y="384" width="40" height="20" fill="#78350F"/>
+        <!-- Brick 1 (Bottom) -->
+        <polygon points="120,200 320,120 380,150 180,230" fill="url(#hebelTop)"/>
+        <polygon points="120,200 180,230 180,350 120,320" fill="url(#hebelLeft)"/>
+        <polygon points="180,230 380,150 380,270 180,350" fill="url(#hebelRight)"/>
+        <!-- Brick 2 (Top Stack) -->
+        <polygon points="140,80 340,0 400,30 200,110" fill="url(#hebelTop)"/>
+        <polygon points="140,80 200,110 200,190 140,160" fill="url(#hebelLeft)"/>
+        <polygon points="200,110 400,30 400,110 200,190" fill="url(#hebelRight)"/>
+        <!-- Dimension markings -->
+        <text x="300" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#1E293B">60 x 20 x 10 CM</text>
+    </g>
+    <g transform="translate(60, 480)">
+        <rect width="280" height="60" rx="14" fill="#1E293B" stroke="#F97316" stroke-width="2"/>
+        <text x="20" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="900" fill="#F97316">BATA RINGAN HEBEL AAC</text>
+        <text x="20" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#94A3B8">PRESISI TINGGI &bull; KEDAP SUARA & PANAS</text>
+    </g>
+</svg>
