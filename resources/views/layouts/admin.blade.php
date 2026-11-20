@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="{{ asset('images/logo.svg') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -58,9 +58,6 @@
             color: #742B12;
         }
 
-        [x-cloak] {
-            display: none !important;
-        }
     </style>
 
     @stack('head')
@@ -87,7 +84,7 @@
             </div>
 
             <nav class="mt-3 space-y-1.5" aria-label="Navigasi admin">
-                <a href="{{ route('admin.products.index') }}" class="flex items-center gap-3 rounded-xl px-3.5 py-3 text-sm font-semibold transition {{ request()->routeIs('admin.products.*') ? 'bg-brand-500 text-white shadow-lg shadow-brand-950/20' : 'text-stone-400 hover:bg-white/5 hover:text-white' }}">
+                <a href="{{ route('admin.products.index') }}" class="flex items-center gap-3 rounded-xl px-3.5 py-3 text-sm font-semibold transition {{ request()->routeIs('admin.products.index', 'admin.products.edit') ? 'bg-brand-500 text-white shadow-lg shadow-brand-950/20' : 'text-stone-400 hover:bg-white/5 hover:text-white' }}">
                     <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                         <rect x="3" y="3" width="7" height="7" rx="2"/>
                         <rect x="14" y="3" width="7" height="7" rx="2"/>
