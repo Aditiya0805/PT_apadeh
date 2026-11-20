@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="tahuCrispyTitle">
+    <title id="tahuCrispyTitle">Ilustrasi Tahu Crispy Saus Madu</title>
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FFFBEB"/>
+            <stop offset="1" stop-color="#FCD34D"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+            <stop offset="0" stop-color="#FFFFFF" stop-opacity=".8"/>
+            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="16" stdDeviation="17" flood-color="#92400E" flood-opacity=".25"/>
+        </filter>
+    </defs>
+    <rect width="800" height="600" fill="url(#bg)"/>
+    <circle cx="690" cy="87" r="150" fill="#FBBF24" opacity=".4"/>
+    <circle cx="86" cy="531" r="190" fill="#FDE68A" opacity=".7"/>
+    <circle cx="400" cy="290" r="250" fill="url(#glow)"/>
+    <g fill="none" stroke="#D97706" stroke-width="4" opacity=".25">
+        <path d="M120 134c60-60 128-52 180 5"/>
+        <path d="M625 424c45 45 38 95-8 130"/>
+    </g>
+    <ellipse cx="399" cy="366" rx="229" ry="102" fill="#92400E" opacity=".15"/>
+    <ellipse cx="400" cy="312" rx="255" ry="168" fill="#FFFCF5" filter="url(#shadow)"/>
+    <ellipse cx="400" cy="312" rx="206" ry="126" fill="#F3E5D2"/>
+    <g filter="url(#shadow)">
+        <g transform="translate(309 241) rotate(-8)">
+            <rect width="83" height="83" rx="17" fill="#FBBF24"/>
+            <rect x="9" y="9" width="65" height="65" rx="12" fill="#FDE68A"/>
+            <circle cx="28" cy="30" r="3" fill="#D97706" opacity=".6"/>
+            <circle cx="53" cy="46" r="3" fill="#D97706" opacity=".6"/>
+            <circle cx="56" cy="24" r="2" fill="#D97706" opacity=".6"/>
+        </g>
+        <g transform="translate(397 216) rotate(7)">
+            <rect width="87" height="87" rx="18" fill="#F59E0B"/>
+            <rect x="9" y="9" width="69" height="69" rx="13" fill="#FDE68A"/>
+            <circle cx="31" cy="34" r="3" fill="#D97706" opacity=".6"/>
+            <circle cx="54" cy="52" r="3" fill="#D97706" opacity=".6"/>
+            <circle cx="59" cy="27" r="2" fill="#D97706" opacity=".6"/>
+        </g>
+        <g transform="translate(397 308) rotate(-3)">
+            <rect width="88" height="88" rx="18" fill="#D97706"/>
+            <rect x="9" y="9" width="70" height="70" rx="13" fill="#FCD34D"/>
+            <circle cx="36" cy="39" r="3" fill="#92400E" opacity=".6"/>
+            <circle cx="61" cy="53" r="3" fill="#92400E" opacity=".6"/>
+        </g>
+        <g transform="translate(312 318) rotate(6)">
+            <rect width="80" height="80" rx="16" fill="#F59E0B"/>
+            <rect x="8" y="8" width="64" height="64" rx="12" fill="#FEF3C7"/>
+            <circle cx="29" cy="33" r="3" fill="#D97706" opacity=".6"/>
+            <circle cx="54" cy="48" r="3" fill="#D97706" opacity=".6"/>
+        </g>
+        <g transform="translate(473 330) rotate(11)">
+            <rect width="69" height="69" rx="14" fill="#FCD34D"/>
+            <rect x="8" y="8" width="53" height="53" rx="10" fill="#FFFBEB"/>
+        </g>
+    </g>
+    <path d="M326 354c54 38 136 46 194 4" stroke="#92400E" stroke-width="10" stroke-linecap="round" fill="none" opacity=".8"/>
+    <path d="M348 370c39 14 103 15 144-5" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <g fill="#FFFBEB">
+        <ellipse cx="324" cy="244" rx="5" ry="2" transform="rotate(-20 324 244)"/>
+        <ellipse cx="492" cy="252" rx="5" ry="2" transform="rotate(25 492 252)"/>
+        <ellipse cx="535" cy="313" rx="4" ry="2" transform="rotate(-10 535 313)"/>
+        <ellipse cx="279" cy="324" rx="4" ry="2" transform="rotate(30 279 324)"/>
+        <ellipse cx="468" cy="407" rx="5" ry="2" transform="rotate(15 468 407)"/>
+    </g>
+    <g fill="#DC2626">
+        <circle cx="565" cy="356" r="23"/>
+        <circle cx="539" cy="383" r="13"/>
+        <path d="M569 331c8-17 22-23 35-19-3 15-14 22-35 19Z"/>
+    </g>
+    <g fill="#16A34A">
+        <path d="M256 355c-6-26 7-44 27-49 10 22 0 40-27 49Z"/>
+        <path d="M280 374c2-23 16-35 33-33-2 19-14 31-33 33Z"/>
+    </g>
+    <g transform="translate(63 63)">
+        <rect width="132" height="40" rx="20" fill="#FFF7ED" opacity=".94"/>
+        <circle cx="23" cy="20" r="8" fill="#EA580C"/>
+        <text x="40" y="25" fill="#7C2D12" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">APADEH</text>
+    </g>
+</svg>

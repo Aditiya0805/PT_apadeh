@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="ayamBakarTitle">
+    <title id="ayamBakarTitle">Ilustrasi Ayam Bakar Sambal Matah</title>
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3F1D17"/>
+            <stop offset=".55" stop-color="#7C2D12"/>
+            <stop offset="1" stop-color="#C2410C"/>
+        </linearGradient>
+        <radialGradient id="light" cx="50%" cy="44%" r="55%">
+            <stop offset="0" stop-color="#FFEDD5" stop-opacity=".32"/>
+            <stop offset="1" stop-color="#FFEDD5" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#1C0B07" flood-opacity=".45"/>
+        </filter>
+    </defs>
+    <rect width="800" height="600" fill="url(#bg)"/>
+    <circle cx="90" cy="85" r="160" fill="#EA580C" opacity=".24"/>
+    <circle cx="715" cy="535" r="240" fill="#F97316" opacity=".13"/>
+    <circle cx="400" cy="285" r="270" fill="url(#light)"/>
+    <g fill="none" stroke="#FDBA74" stroke-width="4" opacity=".28">
+        <circle cx="680" cy="118" r="38"/>
+        <circle cx="680" cy="118" r="70"/>
+        <circle cx="680" cy="118" r="102"/>
+    </g>
+    <ellipse cx="402" cy="374" rx="230" ry="112" fill="#1C0B07" opacity=".35"/>
+    <ellipse cx="400" cy="320" rx="250" ry="169" fill="#FFF8EE" filter="url(#shadow)"/>
+    <ellipse cx="400" cy="320" rx="202" ry="128" fill="#E7D7C4"/>
+    <path d="M279 307c-20-42 11-86 70-95 43-7 77 10 116 2 50-10 89 25 83 66-7 48-61 62-117 65-67 4-131-6-152-38Z" fill="#9A3412"/>
+    <path d="M302 285c19-36 55-52 101-45 43 7 75 2 104 17 32 17 21 60-18 74-49 18-98 3-145 14-36 9-63-24-42-60Z" fill="#B45309"/>
+    <path d="M516 331c44 11 68 40 60 77-8 39-49 61-99 50-35-8-48-34-38-62 11-31 40-45 77-65Z" fill="#78350F"/>
+    <path d="M545 386c39-9 58 6 59 32 1 27-23 46-54 43-29-3-43-25-37-48 4-16 13-24 32-27Z" fill="#FFF7ED"/>
+    <g stroke="#FED7AA" stroke-width="7" stroke-linecap="round" opacity=".65">
+        <path d="M334 262l47 36"/>
+        <path d="M381 245l47 36"/>
+        <path d="M430 239l48 35"/>
+        <path d="M478 253l37 27"/>
+        <path d="M327 310l48 27"/>
+        <path d="M384 301l45 26"/>
+        <path d="M441 295l39 23"/>
+    </g>
+    <g>
+        <circle cx="336" cy="387" r="15" fill="#DC2626" opacity=".9"/>
+        <circle cx="365" cy="405" r="10" fill="#EF4444" opacity=".8"/>
+        <path d="M300 382c34-29 76-28 105 3-25 31-70 35-105-3Z" fill="#F97316"/>
+        <g fill="#FEF3C7">
+            <ellipse cx="325" cy="381" rx="9" ry="4" transform="rotate(-18 325 381)"/>
+            <ellipse cx="351" cy="376" rx="9" ry="4" transform="rotate(12 351 376)"/>
+            <ellipse cx="372" cy="391" rx="9" ry="4" transform="rotate(-8 372 391)"/>
+        </g>
+    </g>
+    <g fill="#16A34A">
+        <path d="M481 399c-9-25 4-43 23-48 11 20 2 39-23 48Z"/>
+        <path d="M504 413c3-25 21-34 38-30-1 20-14 32-38 30Z"/>
+        <path d="M469 429c-6-24 4-40 22-46 11 19 3 36-22 46Z"/>
+        <path d="M285 229c-5-22 6-36 22-40 8 17 0 32-22 40Z"/>
+      </g>
+    <g transform="translate(63 63)">
+        <rect width="132" height="40" rx="20" fill="#FFF7ED" opacity=".92"/>
+        <circle cx="23" cy="20" r="8" fill="#EA580C"/>
+        <text x="40" y="25" fill="#7C2D12" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">APADEH</text>
+    </g>
+</svg>

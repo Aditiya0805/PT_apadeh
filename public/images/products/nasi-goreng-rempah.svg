@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="nasiGorengTitle">
+    <title id="nasiGorengTitle">Ilustrasi Nasi Goreng Rempah Apadeh</title>
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FFF4E6"/>
+            <stop offset="1" stop-color="#FDBA74"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="45%" r="50%">
+            <stop offset="0" stop-color="#FFFDF8" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#FFFDF8" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#9A3412" flood-opacity=".22"/>
+        </filter>
+    </defs>
+    <rect width="800" height="600" fill="url(#bg)"/>
+    <circle cx="690" cy="92" r="145" fill="#FB923C" opacity=".3"/>
+    <circle cx="105" cy="520" r="180" fill="#FED7AA" opacity=".65"/>
+    <circle cx="400" cy="290" r="235" fill="url(#glow)"/>
+    <path d="M175 165c-20 55 8 92 60 98" stroke="#C2410C" stroke-width="5" stroke-linecap="round" fill="none" opacity=".35"/>
+    <path d="M635 390c45 12 65 50 52 94" stroke="#C2410C" stroke-width="5" stroke-linecap="round" fill="none" opacity=".3"/>
+    <ellipse cx="403" cy="345" rx="238" ry="158" fill="#9A3412" opacity=".13"/>
+    <ellipse cx="400" cy="315" rx="240" ry="170" fill="#FFFBF5" filter="url(#shadow)"/>
+    <ellipse cx="400" cy="315" rx="190" ry="125" fill="#F5E7D8"/>
+    <path d="M265 300c20-75 88-113 153-91 43 14 70 47 113 56 33 7 35 48 10 72-35 34-87 21-142 34-76 18-145-3-134-71Z" fill="#D97706"/>
+    <path d="M290 290c32-54 86-74 142-54 56 20 91 29 86 59-7 40-76 24-127 38-56 16-125 2-101-43Z" fill="#F59E0B"/>
+    <g fill="#92400E" opacity=".65">
+        <ellipse cx="342" cy="269" rx="8" ry="4" transform="rotate(-20 342 269)"/>
+        <ellipse cx="420" cy="248" rx="8" ry="4" transform="rotate(15 420 248)"/>
+        <ellipse cx="477" cy="286" rx="8" ry="4" transform="rotate(-15 477 286)"/>
+        <ellipse cx="374" cy="318" rx="8" ry="4" transform="rotate(10 374 318)"/>
+        <ellipse cx="453" cy="318" rx="8" ry="4" transform="rotate(25 453 318)"/>
+    </g>
+    <g fill="#16A34A">
+        <ellipse cx="316" cy="327" rx="15" ry="7" transform="rotate(-28 316 327)"/>
+        <ellipse cx="487" cy="253" rx="14" ry="6" transform="rotate(42 487 253)"/>
+        <circle cx="411" cy="232" r="6"/>
+        <circle cx="444" cy="292" r="5"/>
+    </g>
+    <g fill="#DC2626">
+        <path d="M505 333c31-10 49-2 60 17-23 13-47 8-60-17Z"/>
+        <path d="M291 266c-26-16-48-14-62 1 18 18 43 20 62-1Z"/>
+    </g>
+    <g transform="translate(399 275)">
+        <ellipse cx="0" cy="0" rx="76" ry="58" fill="#FFFDF8"/>
+        <ellipse cx="-6" cy="-2" rx="31" ry="26" fill="#FBBF24"/>
+        <ellipse cx="-12" cy="-8" rx="10" ry="7" fill="#FDE68A" opacity=".8"/>
+    </g>
+    <g fill="#FCD34D">
+        <circle cx="530" cy="367" r="5"/>
+        <circle cx="318" cy="371" r="4"/>
+        <circle cx="450" cy="387" r="5"/>
+        <circle cx="360" cy="347" r="4"/>
+    </g>
+    <g stroke="#7C2D12" stroke-width="4" stroke-linecap="round" opacity=".6" fill="none">
+        <path d="M300 156c20-18 4-32 18-51"/>
+        <path d="M360 144c19-21 2-35 15-55"/>
+        <path d="M423 151c18-20 1-36 15-56"/>
+    </g>
+    <g transform="translate(63 63)">
+        <rect width="132" height="40" rx="20" fill="#FFF7ED" opacity=".92"/>
+        <circle cx="23" cy="20" r="8" fill="#EA580C"/>
+        <text x="40" y="25" fill="#7C2D12" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">APADEH</text>
+    </g>
+</svg>
